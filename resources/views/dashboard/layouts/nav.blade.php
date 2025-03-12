@@ -134,7 +134,13 @@
                       <li><a href="#"><i class="ti-email"></i> <span>Inbox</span></a></li>
                       <li><a href="#"><i class="ti-settings"></i> <span>Setting</span></a></li> --}}
                       <li><a href="{{route('viewIndex')}}"><i class="ti-user"></i> <span>Main Store</span></a></li>
-                      <li><a href="{{route('logout')}}"><i class="ti-power-off"></i> <span>Logout</span></a></li>
+                      {{-- <li><a href="{{route('logout')}}"><i class="ti-power-off"></i> <span>Logout</span></a></li> --}}
+                      <li>
+                        <form action="{{route('logout')}}" method="post">
+                          @csrf
+                          <button type="submit" href="{{route('logout')}}"><i class="ti-power-off"></i> <span>Logout</span></button>
+                        </form>
+                      </li>
                     </ul>
                   </div>
                 </div>
