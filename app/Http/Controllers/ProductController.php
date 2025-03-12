@@ -69,6 +69,7 @@ class ProductController extends Controller
             'price' => 'integer|min:1',
             'discount' => 'integer|min:1',
             'details' => 'string|max:255|min:1',
+            'category' => 'string|max:255|min:1',
             'image' => 'image|mimes:png,jpg,jpeg,gif|max:2022'
         ]);
 
